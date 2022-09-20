@@ -255,6 +255,6 @@ function Counter() {
     if (clickors == clickorsLimit) {
       alert("Ben jij een cookieclicker");
       alert("Daaaaag");
-      window.open("http://cookieclicker.com");
+      window.open("https://orteil.dashnet.org/cookieclicker/");
     }
 }
