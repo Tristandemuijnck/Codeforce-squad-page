@@ -6,7 +6,7 @@ function carrousel(deCarrousel) {
   const naarLinks = 1;
   const naarRechts = -1;
 
-  const group1 = ["siem", "siem", "siem", "siem"];
+  const group1 = ["Tristan", "Fouad", "Chris", "Amir", "Siem", "Oliver"];
   const group2 = ["tristan", "tristan", "tristan", "tristan", "tristan"];
   const group3 = ["chris", "chris", "chris", "chris", "chris"];
   const group4 = ["amir", "amir", "amir"];
