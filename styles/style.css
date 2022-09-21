@@ -131,14 +131,38 @@ main {
   bottom: 11em;
   width: 6rem;
   height: 3.5rem;
+  border-radius: 12px;
+  background-color:rgb(127, 255, 212, 0.116);
+  transition-duration: 0.6s;
+
 }
+
+.group-section > button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.632),0 17px 50px 0 rgba(0,0,0,0.747);
+}
+
+.group-section > button:hover  {
+  background-color: rgba(97, 255, 202, 0.548) ;
+  color: white;
+  transition-duration: 0.8s;
+}
+
+
+
 
 .group-section > button:first-of-type{
-  right: calc(50% + 5rem);
+  right: calc(50% + 7rem);
+  top: calc(60% + 7rem);  
+  font-family: 'Courier New', Courier, monospace;
+
 }
 
+
 .group-section > button:last-of-type{
-  left: calc(50% + 5rem);
+  left: calc(50% + 7rem);
+  top: calc(60% + 7rem);
+  font-family: 'Courier New', Courier, monospace;
+
 }
 
 .group-button{
@@ -148,12 +172,27 @@ main {
   min-width: 12vw;
   height: 5vw;
   line-height: 5vw;
-  font-family: ChunkReThunk;
-  font-size: 2.75em;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.30em;
   text-align: center;
   letter-spacing: 1px;
+  background-color: rgba(127, 255, 212, 0.116);
   color: black;
+  transition-duration: 0.6s;
+  border-radius: 9px;
 }
+
+.group-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.632),0 17px 50px 0 rgba(0,0,0,0.747);
+}
+
+
+.group-button:hover {
+  background-color: rgba(97, 255, 202, 0.548) ;
+  color: white;
+  transition-duration: 0.8s;
+}
+
 
 [disabled] + .group-button {
   transform: translateY(-5rem) scale(0.5);
