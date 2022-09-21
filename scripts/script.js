@@ -1,3 +1,7 @@
+import teamLeden from './array.json' assert {type: 'json'};
+
+import './array.json';
+
 function carrousel(deCarrousel) {
   const groupTarget = 5;
   var groupCount = 0;
@@ -11,6 +15,8 @@ function carrousel(deCarrousel) {
   const group3 = ["chris", "chris", "chris", "chris", "chris"];
   const group4 = ["amir", "amir", "amir"];
   const group5 = ["fouad", "fouad", "fouad"];
+
+ console.log(teamLeden.teamLeden[0].teamId);
 
   function iniCarrousel() {
     for (let i = 0; i < groups.length; i++) {
