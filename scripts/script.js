@@ -12,6 +12,7 @@ function carrousel(deCarrousel) {
   const group4 = ["amir", "amir", "amir"];
   const group5 = ["fouad", "fouad", "fouad"];
 
+  
 
   function iniCarrousel() {
     for (let i = 0; i < groups.length; i++) {
