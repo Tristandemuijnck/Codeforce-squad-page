@@ -36,6 +36,16 @@ main {
   justify-content: center;
   background: rgb(53, 185, 185);
 }
+ 
+.name-nav ul li a {
+  text-decoration-line: none;
+  color: black;
+}
+
+.name-nav ul li a:hover {
+  text-decoration-line: underline;
+  color: black;
+}
 
 /*---------------*/
 /* Group section */

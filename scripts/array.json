@@ -1,0 +1,34 @@
+{
+    "teamLeden": [
+        {
+            "teamId": 1,
+            "naam": "Chris",
+            "visitekaartje" : "http://chris.student.fdnd.nl"
+        },
+        {
+            "teamId": 1,
+            "naam": "Tristan",
+            "visitekaartje" : "http://tristan.student.fdnd.nl"
+        },
+        {
+            "teamId": 1,
+            "naam": "Oliver",
+            "visitekaartje": "http://olivergriep.student.fdnd.nl/versie2"
+        },
+        {
+            "teamId": 1,
+            "naam": "Amir",
+            "visitekaartje": "http://amir.student.fdnd.nl"
+        },
+        {
+            "teamId": 1,
+            "naam": "Siem",
+            "visitekaartje": "http://siem.student.fdnd.nl"
+        },
+        {
+            "teamId": 1,
+            "naam": "Fouad",
+            "visitekaartje": "http://fouad.student.fdnd.nl"
+        }   
+    ]
+}

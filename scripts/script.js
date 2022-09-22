@@ -12,6 +12,8 @@ function carrousel(deCarrousel) {
   const group4 = ["amir", "amir", "amir"];
   const group5 = ["fouad", "fouad", "fouad"];
 
+  
+
   function iniCarrousel() {
     for (let i = 0; i < groups.length; i++) {
       setIndex(groups[i], i + 1);
@@ -45,10 +47,14 @@ function carrousel(deCarrousel) {
     let nameNav = document.querySelector(".name-nav");
     nameNav.style.setProperty("display", "block");
 
-    let richtingButtonLinks = document.querySelector(".group-section > button:first-of-type");
+    let richtingButtonLinks = document.querySelector(
+      ".group-section > button:first-of-type"
+    );
     richtingButtonLinks.style.setProperty("right", "calc(50% + 13rem)");
 
-    let richtingButtonRechts = document.querySelector(".group-section > button:last-of-type");
+    let richtingButtonRechts = document.querySelector(
+      ".group-section > button:last-of-type"
+    );
     richtingButtonRechts.style.setProperty("left", "calc(50% + -7rem)");
 
     // Group 1
@@ -58,15 +64,17 @@ function carrousel(deCarrousel) {
       document.getElementById("group3").style.display = "none";
       document.getElementById("group4").style.display = "none";
       document.getElementById("group5").style.display = "none";
-      
-      if ( document.getElementById("group1").childElementCount == 0 ){
+
+      // Look if childElement exists
+      if (document.getElementById("group1").childElementCount == 0) {
         for (var i = 0; i < group1.length; i++) {
           const ul = document.getElementById("group1");
           const li = document.createElement("li");
           li.appendChild(document.createTextNode(group1[i]));
           ul.appendChild(li);
         }
-      } else {}
+      }
+    } else {
     }
 
     // Group 2
@@ -77,14 +85,15 @@ function carrousel(deCarrousel) {
       document.getElementById("group4").style.display = "none";
       document.getElementById("group5").style.display = "none";
 
-      if ( document.getElementById("group2").childElementCount == 0 ){
+      if (document.getElementById("group2").childElementCount == 0) {
         for (var i = 0; i < group2.length; i++) {
           const ul = document.getElementById("group2");
           const li = document.createElement("li");
           li.appendChild(document.createTextNode(group2[i]));
           ul.appendChild(li);
         }
-      } else {}
+      } else {
+      }
     }
 
     // Group 3
@@ -95,14 +104,15 @@ function carrousel(deCarrousel) {
       document.getElementById("group4").style.display = "none";
       document.getElementById("group5").style.display = "none";
 
-      if ( document.getElementById("group3").childElementCount == 0 ){
+      if (document.getElementById("group3").childElementCount == 0) {
         for (var i = 0; i < group3.length; i++) {
           const ul = document.getElementById("group3");
           const li = document.createElement("li");
           li.appendChild(document.createTextNode(group3[i]));
           ul.appendChild(li);
         }
-      } else {}
+      } else {
+      }
     }
 
     // Group 4
@@ -113,15 +123,15 @@ function carrousel(deCarrousel) {
       document.getElementById("group4").style.display = "block";
       document.getElementById("group5").style.display = "none";
 
-      if ( document.getElementById("group4").childElementCount == 0 ){
+      if (document.getElementById("group4").childElementCount == 0) {
         for (var i = 0; i < group4.length; i++) {
           const ul = document.getElementById("group4");
           const li = document.createElement("li");
           li.appendChild(document.createTextNode(group4[i]));
           ul.appendChild(li);
         }
-        
-      } else {}
+      } else {
+      }
     }
 
     // Group 5
@@ -132,14 +142,15 @@ function carrousel(deCarrousel) {
       document.getElementById("group4").style.display = "none";
       document.getElementById("group5").style.display = "block";
 
-      if ( document.getElementById("group5").childElementCount == 0 ){
+      if (document.getElementById("group5").childElementCount == 0) {
         for (var i = 0; i < group5.length; i++) {
           const ul = document.getElementById("group5");
           const li = document.createElement("li");
           li.appendChild(document.createTextNode(group5[i]));
           ul.appendChild(li);
         }
-      } else {}
+      } else {
+      }
     }
   }
 
@@ -150,10 +161,14 @@ function carrousel(deCarrousel) {
     let nameNav = document.querySelector(".name-nav");
     nameNav.style.setProperty("display", "none");
 
-    let richtingButtonLinks = document.querySelector(".group-section > button:first-of-type");
+    let richtingButtonLinks = document.querySelector(
+      ".group-section > button:first-of-type"
+    );
     richtingButtonLinks.style.setProperty("right", "calc(50% + 5rem)");
 
-    let richtingButtonRechts = document.querySelector(".group-section > button:last-of-type");
+    let richtingButtonRechts = document.querySelector(
+      ".group-section > button:last-of-type"
+    );
     richtingButtonRechts.style.setProperty("left", "calc(50% + 5rem)");
 
     if (newNumber != 1) {
@@ -192,13 +207,15 @@ function carrousel(deCarrousel) {
     let nameNav = document.querySelector(".name-nav");
     nameNav.style.setProperty("display", "none");
 
-    let richtingButtonLinks = document.querySelector(".group-section > button:first-of-type");
+    let richtingButtonLinks = document.querySelector(
+      ".group-section > button:first-of-type"
+    );
     richtingButtonLinks.style.setProperty("right", "calc(50% + 5rem)");
 
-    let richtingButtonRechts = document.querySelector(".group-section > button:last-of-type");
+    let richtingButtonRechts = document.querySelector(
+      ".group-section > button:last-of-type"
+    );
     richtingButtonRechts.style.setProperty("left", "calc(50% + 5rem)");
-
-    
 
     for (let i = 0; i < groups.length; i++) {
       let newIndex = parseInt(groups[i].getAttribute("data-index")) + richting;
@@ -233,15 +250,14 @@ window.addEventListener("load", function () {
   carrousel(document.querySelector("#group-section ul"));
 });
 
-
 // const btn = document.querySelector('group-button');
 // btn.onclick = Counter;
 
-document.querySelector('.links').addEventListener('click', function() {
+document.querySelector(".links").addEventListener("click", function () {
   Counter();
 });
 
-document.querySelector('.rechts').addEventListener('click', function() {
+document.querySelector(".rechts").addEventListener("click", function () {
   Counter();
 });
 
@@ -249,12 +265,12 @@ var clickors = 0;
 const clickorsLimit = 20;
 
 function Counter() {
-    clickors += 1;
-    console.log(clickors);
-    
-    if (clickors == clickorsLimit) {
-      alert("Ben jij een cookieclicker");
-      alert("Daaaaag");
-      window.open("http://cookieclicker.com");
-    }
+  clickors += 1;
+  console.log(clickors);
+
+  if (clickors == clickorsLimit) {
+    alert("Ben jij een cookieclicker");
+    alert("Daaaaag");
+    window.open("https://orteil.dashnet.org/cookieclicker/");
+  }
 }
