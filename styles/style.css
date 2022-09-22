@@ -3,9 +3,9 @@ html {
   height: 100%;
   width: 100%;
   padding: 0;
-
   --base-margin: 5vw;
   --basis-tijd:.5s;
+  
 }
 
 body {
@@ -29,29 +29,53 @@ main {
 }
 
 .name-nav {
+  
+  overflow: auto;
   width: 25%;
   height: 100%;
   display: none;
   align-items: center;
   justify-content: center;
-  background: rgb(53, 185, 185);
+  background: #D3CCE3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .name-nav h3{
   justify-content: space-around;
   display: flex;
-  margin-left: 1em;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  font-size: medium;
 }
 
 .name-nav ul{
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
-  margin: auto;
+  padding: 0.5em;
+  align-content: center;
+}
+
+.name-nav img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 5px 0;
+  scale: 0.7;
+  box-shadow: 0px 5px 20px 3px rgba(0, 0, 0, 0.7);
 }
 
 .name-nav li{
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
+  background: rgba(139, 238, 232);
+  box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 0.5em 0;
+  width: 22em;
 }
  
 .name-nav ul li a {
