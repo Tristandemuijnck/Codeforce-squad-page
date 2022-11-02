@@ -4,7 +4,7 @@
 
 ## :pencil2: Beschrijving
 
-Dit is de repository van de squadpage. Voor het maken van deze squadpage is gebruik gemaakt van HTML, CSS en JavaScript.
+Dit is de repository van de squadpage. Ontwerp en maak met je squad een squadpagina met HTML, CSS en Javascript.
 
 ## 🔴 Live versie
 
